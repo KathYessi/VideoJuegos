@@ -11,6 +11,6 @@ namespace videojuego.Data
 
         }
 
-        public DbSet<videojuego.Models.Producto> DataContactos { get; set; } 
+        public DbSet<videojuego.Models.Producto> DataProductos { get; set; } 
     }
 }

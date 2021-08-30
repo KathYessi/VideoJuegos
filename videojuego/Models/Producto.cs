@@ -10,16 +10,16 @@ namespace videojuego.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
-        public int Id { get; set; }
-        public string Nombre  { get; set; }
+        public int id { get; set; }
+        public string Nombre{ get; set; }
         [Column("Nombre")]
         public string Categoria{ get; set; }
         [Column("Categoria")]
-        public int Precio { get; set; }
+        public int Precio{ get; set; }
         [Column("Precio")]
-        public int Descuento { get; set; }
+        public int Descuento{ get; set; }
         [Column("Descuento")]     
-        public string Gender { get; set; }
+        public string Gender{ get; set; }
 
     }
 }

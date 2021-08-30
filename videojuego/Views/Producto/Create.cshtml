@@ -1,33 +1,28 @@
-
 @model videojuego.Models.Producto
 @{
-    ViewData["Title"] = "Producto Video Juego";
+    ViewData["Title"] = "Producto";
 }
+
 <h1>@ViewData["Title"]</h1>
 
- <div class="text-center">
-    <div class="container">
-    <div class="row">
-        <div class="col-4">
-            <form asp-controller="Producto" asp-action="Create">
-                <div class="mb-3">
-                    <label asp-for="Nombre" class="form-label">Nombre</label>
-                    <input asp-for="Nombre" type="text" class="form-control"/>
-                </div>
-                 <div class="mb-3">
-                    <label asp-for="Categoria" class="form-label">Categoria</label>
-                    <input asp-for="Categoria" type="text" class="form-control"/>
-                </div>
-                 <div class="mb-3">
-                    <label asp-for="Precio" class="form-label">Precio</label>
-                    <input asp-for="Precio" type="number" class="form-control"/>
-                </div>
-                <div class="mb-3">
-                    <label asp-for="Descuento" class="form-label">Descuento</label>
-                    <input asp-for="Descuento" type="number" class="form-control"/>
-                </div>
+<div class="text-center">
+    <h1 class="display-4">Producto</h1>
+
+    <form asp-controller="Producto" asp-action="Create">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" class="form-control form-control-sm" type="text" placeholder="Escribe un nombre" aria-label=".form-control-sm" />
+
+        <label asp-for="Categoria" class="control-label"></label>
+        <input asp-for="Categoria" class="form-control" />
+
+        <label asp-for="Precio" class="control-label"></label>
+        <input asp-for="Precio" class="form-control" />
+
+        <label asp-for="Descuento" class="control-label"></label>
+        <input asp-for="Descuento" class="form-control" />
+
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Registrar </button> 
+            <button type="submit" class="btn btn-primary">Registrar</button> 
         </div>              
     </form>
     <h1>@ViewData["Message"]</h1>
