@@ -8,9 +8,8 @@ namespace videojuego.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
-
+            
         }
-
         public DbSet<videojuego.Models.Producto> DataProductos { get; set; } 
     }
 }
